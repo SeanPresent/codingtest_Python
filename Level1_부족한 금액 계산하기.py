@@ -29,3 +29,8 @@ def solution(price, money, count):
         answer = 0
     else:
         answer = answer -money
+
+  
+        
+        
+        

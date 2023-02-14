@@ -1,4 +1,4 @@
-
+# Handling Index Frequencies.
 """
 Hash Table to validate frequencies.
 eg) s1 = "nameless", s2 = "salesmen"
@@ -34,5 +34,10 @@ def are_anagram(s1, s2):
         return False
     return Counter(s1) == Counter(s2)
 
-    
-         
+# sorted method
+
+def are_anagram(s1, s2):
+    if len(s1) != len(s2):
+        return False
+    return sorted(s1) == sorted(s2)
+

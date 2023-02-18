@@ -31,3 +31,9 @@ def solution(absolutes, signs):
     answer = [item1 * item2 for item1, item2 in zip(absolutes, boolian)]
 
     return sum(answer)
+
+
+# other's answer
+
+def solution(absolutes, signs):
+    return sum(absolutes if sign else -absolutes for absolutes, sign in zip(absolutes, signs))

@@ -55,7 +55,7 @@ def solution(A, K):
     K %= len(A)  
     if K == 0:
         return A
-    
+    return A[-K:] + A[:-K]
     
     
 # run time error
@@ -71,10 +71,3 @@ def solution(A, K):
 
 print(solution(A, K))
     
-    
-    
-    
-    
-    
-    
-    return A[-K:] + A[:-K]

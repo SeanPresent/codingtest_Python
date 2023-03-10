@@ -49,13 +49,16 @@ Copyright 2009–2023 by Codility Limited. All Rights Reserved. Unauthorized cop
 # print("this is a debug message")
 
 def solution(A, K):
-    if not A:
+    if not A: 
+        return A # 아무것도 없을 때 [] 이렇게 나온다.
+    
+    K%=len(A) # 순서가 바껴도 상관없다.
+    
+    if K == 0: # 계산할 필요없게 만들기,
         return A
     
-    K %= len(A)  
-    if K == 0:
-        return A
     return A[-K:] + A[:-K]
+
     
     
 # run time error
